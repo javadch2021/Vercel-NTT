@@ -35,11 +35,11 @@ export function GlassNotification({
     return () => clearTimeout(timer);
   }, [duration, onClose]);
   const colorClasses = {
-    red: 'bg-red-500/30 border-red-500/50 text-red-100',
-    green: 'bg-green-500/30 border-green-500/50 text-green-100',
-    blue: 'bg-blue-500/30 border-blue-500/50 text-blue-100',
-    yellow: 'bg-yellow-500/30 border-yellow-500/50 text-yellow-100',
-    purple: 'bg-purple-500/30 border-purple-500/50 text-purple-100',
+    red: 'bg-red-400/30 border-red-500/50 text-red-100',
+    green: 'bg-green-400/30 border-green-500/50 text-green-100',
+    blue: 'bg-blue-400/30 border-blue-500/50 text-blue-100',
+    yellow: 'bg-yellow-400/30 border-yellow-500/50 text-yellow-100',
+    purple: 'bg-purple-400/30 border-purple-500/50 text-purple-100',
   };
 
   const textClasses = {
