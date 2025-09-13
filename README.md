@@ -53,26 +53,29 @@ A modern, responsive authentication system built with Next.js 13+ App Router, Ty
 
 ## 📁 Project Structure
 ```bash
-my-auth-app/
+vercel-ntt/
 ├── app/
-│   ├── login/
-│   │   └── page.tsx
 │   ├── dashboard/
+│   │   └── page.tsx
+│   ├── login/
 │   │   └── page.tsx
 │   └── page.tsx
 ├── components/
-│   ├── ui/
-│   │   ├── button.tsx
-│   │   ├── input.tsx
-│   │   └── GlassNotification.tsx
-│   └── forms/
-│       └── PhoneInput.tsx
+│   ├── forms/
+│   │   └── PhoneInput.tsx
+│   └── ui/
+│       ├── GlassNotification.tsx
+│       ├── button.tsx
+│       └── input.tsx
 ├── lib/
 │   └── utils.ts
+├── public/
+├── styles/
 ├── types/
 │   └── index.ts
-├── public/
-└── package.json
+├── README.md
+├── package.json
+└── next.config.ts
 ```
 
 ## 🚀 Getting Started
