@@ -1,9 +1,8 @@
 'use client';
-
 import { PhoneInput } from "@/components/forms/PhoneInput";
 import { Button } from "@/components/ui/button";
 import { useRouter } from "next/navigation";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { isValidIranianMobile, formatPhoneForAPI } from "@/lib/utils";
 import type { User } from "@/types";
 
@@ -53,6 +52,13 @@ export default function LoginPage() {
       setLoading(false);
     }
   };
+
+  useEffect(() => {
+    const storedUser = localStorage.getItem("user");
+    if (storedUser) {
+      router.push("/dashboard");
+    }
+  }, [router]);
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-200 px-4 py-12 sm:px-6 lg:px-8">
