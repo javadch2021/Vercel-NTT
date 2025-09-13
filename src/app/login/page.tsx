@@ -67,7 +67,7 @@ export default function LoginPage() {
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
             <label htmlFor="phone" className="block text-sm font-medium mb-2">
-              Mobile Number (Iran format)
+              Mobile Number
             </label>
             <PhoneInput
               value={phoneNumber}
