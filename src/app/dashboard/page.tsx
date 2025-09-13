@@ -3,11 +3,13 @@
 import { Button } from "@/components/ui/button";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
+import { GlassNotification } from "@/components/ui/GlassNotification";
 import type { User } from "@/types";
 
 export default function DashboardPage() {
   const router = useRouter();
   const [user, setUser] = useState<User | null>(null);
+  const [showLogoutNotification, setShowLogoutNotification] = useState(false);
 
   useEffect(() => {
     const storedUser = localStorage.getItem("user");
@@ -19,8 +21,13 @@ export default function DashboardPage() {
   }, [router]);
 
   const handleLogout = () => {
-    localStorage.removeItem("user");
-    router.push("/login");
+    setShowLogoutNotification(true);
+
+    // Delay actual logout to show notification
+    setTimeout(() => {
+      localStorage.removeItem("user");
+      router.push("/login");
+    }, 2000);
   };
 
   if (!user) return null;
@@ -50,6 +57,16 @@ export default function DashboardPage() {
           Logout
         </Button>
       </div>
+
+      {showLogoutNotification && (
+        <GlassNotification
+          title="Logging Out"
+          description="Please wait while we log you out..."
+          color="red"
+          duration={2000}
+          onClose={() => setShowLogoutNotification(false)}
+        />
+      )}
     </div>
   );
 }
