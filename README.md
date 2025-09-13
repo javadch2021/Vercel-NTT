@@ -103,21 +103,21 @@ Built with mobile-first approach:
 - Touch-friendly interactive elements
 - Adaptive layout for mobile/tablet/desktop
 ## 🔐 Authentication Flow
-1. Login Page
+1. **Login Page**
 - Iranian mobile number validation
 - Real-time feedback
 - API integration with loading states
-2. Dashboard Page
+2. **Dashboard Page**
 - Personalized welcome message
 - User profile display
 - Logout functionality
-3. Session Management
+3. **Session Management**
 - localStorage for client-side storage
 - Automatic redirects
 - Protected routes
 ## 🎯 Evaluation Criteria Compliance
-- ✅ Code Quality: Clean, modular, maintainable
-- ✅ TypeScript: Strong typing throughout
-- ✅ UI/UX: Responsive, accessible, modern
-- ✅ Logic: Validation, API handling, state management
-- ✅ Scalability: Reusable components, proper architecture
+- ✅ **Code Quality**: *Clean, modular, maintainable*
+- ✅ **TypeScript**: *Strong typing throughout*
+- ✅ **UI/UX**: *Responsive, accessible, modern*
+- ✅ **Logic**: *Validation, API handling, state management*
+- ✅ **Scalability**: *Reusable components, proper architecture*
