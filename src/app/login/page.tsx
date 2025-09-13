@@ -55,8 +55,8 @@ export default function LoginPage() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-50 px-4 py-12 sm:px-6 lg:px-8">
-      <div className="w-full max-w-md p-8 space-y-6 bg-white rounded-lg shadow-md">
+    <div className="min-h-screen flex items-center justify-center bg-gray-200 px-4 py-12 sm:px-6 lg:px-8">
+      <div className="w-full max-w-md p-8 space-y-6 bg-white rounded-lg shadow-2xl">
         <h1 className="text-2xl font-bold text-center ">Login</h1>
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
